@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <title>{{ title }}</title>
+  </head>
+  <body class={% if noscroll %}"h-screen flex flex-col"{% else %}""{% endif %}>
+    {% include "partials/nav.html" %}
+    <div class={% if noscroll %}"grow"{% else %}""{% endif %}>
+      {{ content | safe }}
+    </div>
+  </body>
+</html>
