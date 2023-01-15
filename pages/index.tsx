@@ -21,6 +21,7 @@ export default function Home() {
         <div className="absolute w-full h-full flex items-center justify-center text-center">
           <div className="bg-white bg-opacity-50 rounded-2xl p-8 m-8 flex flex-col gap-8 items-center justify-center drop-shadow-xl">
             <p
+              style={{ color: "#12336Fff" }}
               className={`md:text-5xl lg:text-6xl text-4xl ${titleFont.className}`}
             >
               JOHNNY WEHO
