@@ -19,18 +19,18 @@ export default function Home() {
           alt="Johnny WEHO walking across a rainbow crosswalk"
         />
         <div className="absolute w-full h-full flex items-center justify-center text-center">
-          <div className="bg-white bg-opacity-50 rounded-2xl p-8 m-8 flex flex-col gap-8 items-center justify-center drop-shadow-xl">
+          <div
+            style={{ color: "#12336Fff" }}
+            className="bg-white bg-opacity-50 rounded-2xl p-8 m-8 flex flex-col gap-8 items-center justify-center drop-shadow-xl"
+          >
             <p
-              style={{ color: "#12336Fff" }}
               className={`md:text-5xl lg:text-6xl text-4xl ${titleFont.className}`}
             >
               JOHNNY WEHO
             </p>
-            <p className="text-slate-600 leading-7 max-w-lg">
-              <span className="font-bold">West Hollywood</span>
-              {
-                ", what a town! Looking for some fun and inspiring content about living in West Hollywood?"
-              }
+            <p className="text-slate-600 leading-7 max-w-lg text-lg">
+              Looking for some fun and inspiring content about living in{" "}
+              <span className="font-bold">West&nbsp;Hollywood</span>?
             </p>
             <p className="text-slate-600 leading-7 max-w-lg text-lg">
               <span className="font-bold">Follow me</span>
