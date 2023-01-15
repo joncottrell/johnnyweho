@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Oswald } from "@next/font/google";
+import { Roboto } from "@next/font/google";
 
-const font = Oswald({
+const font = Roboto({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
@@ -20,7 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component className={font.className} {...pageProps} />
+      <main className={font.className}>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }
