@@ -13,7 +13,7 @@ export default function Home() {
           alt="Johnny WEHO walking across a rainbow crosswalk"
         />
         <div className="absolute w-full h-full flex items-center justify-center">
-          <div className="bg-white bg-opacity-40 rounded-lg p-4 flex flex-col gap-4 items-center justify-center drop-shadow-xl">
+          <div className="bg-white bg-opacity-40 rounded-2xl p-8 flex flex-col gap-4 items-center justify-center drop-shadow-xl">
             <p className="font-bold text-3xl">Johnny WEHO</p>
             <div className="flex row">
               <SocialIcon url="https://instagram.com/johnnyweho" />
