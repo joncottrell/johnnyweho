@@ -1,0 +1,63 @@
+---
+const products = [
+  {
+    title: "Cello's Embrace",
+    label: "Rare Print",
+    price: "400",
+    imageUrl: "/images/hero.jpg",
+    destination:
+      "mailto:cottrell.jonathan@gmail.com?subject=Art%20Inquiry&body=I%20would%20like%20to%20purchase%20Cellos%20Embrace",
+  },
+  {
+    title: "Uncensored Thoughts",
+    label: "Art Book",
+    price: "130",
+    imageUrl: "/images/uncensored.jpg",
+    destination: "https://www.blurb.com/b/9671961-uncensored-thoughts",
+  },
+  {
+    title: "Submerged Elegance",
+    label: "Rare Print",
+    price: "300",
+    imageUrl: "/images/underwater.jpg",
+    destination:
+      "mailto:cottrell.jonathan@gmail.com?subject=Art%20Inquiry&body=I%20would%20like%20to%20purchase%20Submerged%20Elegance",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Johnny WEHO</title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center h-screen">
+      <h1 class="text-2xl my-4">Limited Edition</h1>
+      <div class="grid grid-cols-2 grid-flow-row gap-4 p-4">
+        {
+          products.map((product) => (
+            <a href={product.destination} target="_blank" class="text-center">
+              <img
+                src={product.imageUrl}
+                alt={product.title}
+                class="mx-auto w-32 h-32 object-contain"
+              />
+              <h3 class="mt-4 text-xl font-semibold">{product.title}</h3>
+              <p class="text-gray-500">{product.label}</p>
+              <p class="text-xl text-gray-500">${product.price}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</html>
